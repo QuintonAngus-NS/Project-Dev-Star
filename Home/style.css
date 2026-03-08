@@ -434,6 +434,7 @@ html, body {
     background-color: white;
     border-radius: 5px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* footer styling */
@@ -496,11 +497,12 @@ footer {
     margin: 15px 0;
 }
 
-.footerLink {
+a .footerLink {
     color: white;
     text-decoration: none;
     font-size: 15px;
     font-weight: 300;
+    display: flex;
 }
 
 .footerLinks {
