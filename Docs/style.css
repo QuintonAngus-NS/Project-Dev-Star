@@ -1,0 +1,137 @@
+* {
+    font-family: 'Open Sans';
+    color: #141414;
+}
+
+span {
+    color: #bf3522;
+    font-weight: 600;
+}
+
+.divider {
+    width: 600px;
+    border-bottom: #bf3522 1px solid;
+    margin: 25px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searchBarWrapper {
+    display: flex;
+}
+
+#searchBar {
+    border: 1px #141414 solid;
+    border-radius: 5px 0 0 5px;
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+}
+
+#searchBarSubmitBtn {
+    height: 50px;
+    width: 100px;
+    border: #141414 1px solid;
+    background-color: #141414;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#searchIcon {
+    color: white;
+    font-size: 30px;
+}
+
+#searchBar:focus {
+    outline: none;
+    border: #bf3522 2px solid;
+    border-radius: 5px 0 0 5px;
+}
+
+#searchIcon:hover {
+    animation: searchIconAnimation 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes searchIconAnimation {
+    from {opacity: 100%;}
+    to {opacity: 50%;}
+}
+
+#resultsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 25px;
+    width: 600px;
+    gap: 15px;
+}
+
+.result {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: start;
+    height: 25px;
+    cursor: pointer;
+}
+
+.resultText {
+    font-size: 18px;
+    font-weight: 500;
+    color: #141414;
+    height: 25px;
+    border-left: 1px #141414 solid;
+    padding-left: 15px;
+}
+
+.topic {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    width: 80px;
+}
+
+.html {
+    color: rgb(226, 127, 14);
+}
+
+.node {
+    color: rgb(6, 98, 6);
+}
+
+.supabase {
+    color: rgb(63, 199, 14);
+}
+.result:hover .resultText{
+    font-weight: 600;
+}
+
+.topicHtml:hover {
+    color: rgb(226, 127, 14);
+}
+
+.topicNode:hover {
+    color: rgb(6, 98, 6);
+}
+
+.topicSupaBase:hover {
+    color: rgb(63, 199, 14);
+}
+
+
