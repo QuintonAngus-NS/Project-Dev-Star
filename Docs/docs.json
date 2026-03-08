@@ -1,0 +1,20 @@
+[
+  {
+    "id": "html-body",
+    "title": "The Body Tag",
+    "topic": "HTML",
+    "category": ["HTML", "HTML Basics", "HTML Structure"],
+    "tags": ["html", "body", "structure", "elements", "layout"],
+    "description": "A part of the structure of a HTML document",
+    "url": "/Docs/Pages/Html/Body-Tag/"
+  },
+  {
+    "id": "Border-Styling",
+    "title": "Border Styling",
+    "topic": "CSS",
+    "category": ["CSS", "Styling 101", "Border Properties"],
+    "tags": ["styling", "css", "border properties"],
+    "description": "Styles the border around HTML elements",
+    "url": "/Docs/Pages/Css/Border-Styling"
+  }
+]
