@@ -441,7 +441,6 @@ html, body {
 footer {
     margin-top: 150px;
     background-color: #141414;
-    min-height: 400px;
     width: 100%;
     padding: 40px;
     display: flex;
