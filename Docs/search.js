@@ -18,9 +18,12 @@ fetch('/Docs/docs.json')
     })
 
 function renderResults(resultData) {
-    resultData.forEach(data => {
-        const resultsContainer = document.getElementById('resultsContainer')
 
+    const resultsContainer = document.getElementById('resultsContainer')
+
+    resultsContainer.innerHTML = ''
+
+    resultData.forEach(data => {
         const resultCard = document.createElement('a')
         const topic = document.createElement('div')
         const text = document.createElement('div')
@@ -43,7 +46,7 @@ function renderResults(resultData) {
 }
 
 function queryData(query) {
-    if (!query) return docs
+    if (!query) return
 
     const results = fuse.search(query)
     return results.map(r => r.item)
